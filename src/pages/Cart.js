@@ -84,11 +84,11 @@ const Cart = () => {
                     </div>
 
                     <div className="row">
-                        <Link to={`/ChomCHOB-Front-end-Quiz/`} className="col-3 offset-9" style={{ textDecoration: 'none' }}>
+                        <a className="col-3 offset-9" href="/ChomCHOB-Front-end-Quiz" >
                             <button className="btn btn-cart btn-lg mt-2" onClick={removeCart}>
                                 Proceed to checkout
                             </button>
-                        </Link>
+                        </a>
                     </div>
                 </>
             )}
