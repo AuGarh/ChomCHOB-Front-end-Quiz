@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ChomCHOB-Front-end-Quiz/static/css/main.99c33472.css",
-    "main.js": "/ChomCHOB-Front-end-Quiz/static/js/main.b04e1ce3.js",
+    "main.js": "/ChomCHOB-Front-end-Quiz/static/js/main.7400d6e7.js",
     "static/js/787.6664ebaa.chunk.js": "/ChomCHOB-Front-end-Quiz/static/js/787.6664ebaa.chunk.js",
     "index.html": "/ChomCHOB-Front-end-Quiz/index.html",
     "main.99c33472.css.map": "/ChomCHOB-Front-end-Quiz/static/css/main.99c33472.css.map",
-    "main.b04e1ce3.js.map": "/ChomCHOB-Front-end-Quiz/static/js/main.b04e1ce3.js.map",
+    "main.7400d6e7.js.map": "/ChomCHOB-Front-end-Quiz/static/js/main.7400d6e7.js.map",
     "787.6664ebaa.chunk.js.map": "/ChomCHOB-Front-end-Quiz/static/js/787.6664ebaa.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.99c33472.css",
-    "static/js/main.b04e1ce3.js"
+    "static/js/main.7400d6e7.js"
   ]
 }
