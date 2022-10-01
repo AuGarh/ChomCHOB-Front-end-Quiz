@@ -19,10 +19,10 @@ const Cart = () => {
     const cart = useSelector(state => state.cart)
     const { cartItems } = cart
 
-    for (let i = 0; i < cartItems.length-1; i++){
-        if (cartItems[cartItems.length - 1].product === cartItems[i].product){
+    for (let i = 0; i < cartItems.length - 1; i++) {
+        if (cartItems[cartItems.length - 1].product === cartItems[i].product) {
             cartItems[cartItems.length - 1].qty += cartItems[i].qty
-            cartItems.splice(i,1)
+            cartItems.splice(i, 1)
         }
     }
 
@@ -84,11 +84,11 @@ const Cart = () => {
                     </div>
 
                     <div className="row">
-                        <a className="col-3 offset-9" href="/ChomCHOB-Front-end-Quiz/cart">
+                        <Link to={`/ChomCHOB-Front-end-Quiz/`} className="col-3 offset-9" style={{ textDecoration: 'none' }}>
                             <button className="btn btn-cart btn-lg mt-2" onClick={removeCart}>
                                 Proceed to checkout
                             </button>
-                        </a>
+                        </Link>
                     </div>
                 </>
             )}
