@@ -10,7 +10,7 @@ const CartButtons = () => {
     const { cartItems } = cart
 
     return (
-        <NavLink to="/cart" className={`navbar-cart`}>
+        <NavLink to="/ChomCHOB-Front-end-Quiz/cart" className={`navbar-cart`}>
             <BagHappy color="#ffffff" />
             <span>Cart</span>
             

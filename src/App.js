@@ -14,10 +14,10 @@ class App extends Component {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} exact />
-          <Route path="/products/:productId" element={<ProductDetail />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/cart/:productId" element={<Cart />} />
+          <Route path='/ChomCHOB-Front-end-Quiz' element={<Home />} exact />
+          <Route path="/ChomCHOB-Front-end-Quiz/products/:productId" element={<ProductDetail />} />
+          <Route path="/ChomCHOB-Front-end-Quiz/cart" element={<Cart />} />
+          <Route path="/ChomCHOB-Front-end-Quiz/cart/:productId" element={<Cart />} />
         </Routes>
         <Footer />
       </Router>

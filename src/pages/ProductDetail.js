@@ -11,7 +11,7 @@ import { Alert } from 'react-bootstrap'
 const ProductDetail = () => {
 
     const path = window.location.pathname
-    const id = path.split('/')[2]
+    const id = path.split('/')[3]
 
     const dispatch = useDispatch()
 
@@ -81,7 +81,7 @@ const ProductDetail = () => {
                                 </div>
                             </div>
                             <div className="row">
-                                <Link to={`/cart/${id}?qty=${qty}`} className="col-6" style={{ textDecoration: 'none' }}>
+                                <Link to={`/ChomCHOB-Front-end-Quiz/cart/${id}?qty=${qty}`} className="col-6" style={{ textDecoration: 'none' }}>
                                     <button className="btn btn-cart btn-lg my-2 px-2">
                                         <BagTick color="#fff" />
                                         <span className="m-2">ADD TO CART</span>

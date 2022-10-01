@@ -10,7 +10,7 @@ import { Alert } from 'react-bootstrap'
 const Cart = () => {
 
     const path = window.location.pathname
-    const productId = path.split('/')[2]
+    const productId = path.split('/')[3]
 
     const qty = Number(window.location.search.split('=')[1])
 
@@ -18,6 +18,13 @@ const Cart = () => {
 
     const cart = useSelector(state => state.cart)
     const { cartItems } = cart
+
+    for (let i = 0; i < cartItems.length-1; i++){
+        if (cartItems[cartItems.length - 1].product === cartItems[i].product){
+            cartItems[cartItems.length - 1].qty += cartItems[i].qty
+            cartItems.splice(i,1)
+        }
+    }
 
     useEffect(() => {
         if (productId) {
@@ -34,7 +41,7 @@ const Cart = () => {
             <h1>Cart</h1>
             {cartItems.length === 0 ? (
                 <Alert>
-                    ตะกร้ายังว่างๆอยู่นะค้าบ <Link to='/'>กลับไปช็อปก่อนไหมจ๊ะ</Link>
+                    ตะกร้ายังว่างๆอยู่นะค้าบ <Link to='/ChomCHOB-Front-end-Quiz'>กลับไปช็อปก่อนดีไหมจ๊ะ</Link>
                 </Alert>
             ) : (
                 <>
@@ -77,7 +84,7 @@ const Cart = () => {
                     </div>
 
                     <div className="row">
-                        <a className="col-3 offset-9" href="/cart">
+                        <a className="col-3 offset-9" href="/ChomCHOB-Front-end-Quiz/cart">
                             <button className="btn btn-cart btn-lg mt-2" onClick={removeCart}>
                                 Proceed to checkout
                             </button>

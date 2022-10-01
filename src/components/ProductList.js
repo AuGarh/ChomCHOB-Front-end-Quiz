@@ -5,7 +5,7 @@ const ProductList = ({ id, attributes }) => {
     const isReviewed = attributes.review.number
 
     return (
-        <Link to={`/products/${id}`} className="product-list row" style={{ textDecoration: 'none' }}>
+        <Link to={`/ChomCHOB-Front-end-Quiz/products/${id}`} className="product-list row" style={{ textDecoration: 'none' }}>
             <div className="col-1 product-img p-0">
                 <img src={attributes.image_url} alt={attributes.name} />
             </div>
