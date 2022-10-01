@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg fixed-top">
             <div className="container">
-                <NavLink to="/" className="navbar-brand">
+                <NavLink to="/ChomCHOB-Front-end-Quiz" className="navbar-brand">
                     <img src="https://sagnerli.sirv.com/cc-quiz/cob-logo.png" alt=''></img>
                 </NavLink>
 
