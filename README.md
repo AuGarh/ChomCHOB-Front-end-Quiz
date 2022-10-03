@@ -6,7 +6,7 @@
 
 - HTML/CSS
 - Javascript
-- React/Redux
+- React/Redux (first time with it)
 - Visual Studio
 - Git/GitHub
 
